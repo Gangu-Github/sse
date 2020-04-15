@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-size: 16px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  .box::after {
+    color: #000;
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+}
+
+.box1 .box::after {
+  content: "1";
+}
+
+.box2 .box::after {
+  content: "2";
+}
+
+.box3 .box::after {
+  content: "3";
+}
+
+.box4 .box::after {
+  content: "4";
+}
